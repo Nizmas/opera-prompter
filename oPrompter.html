@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="src/bootstrap/bootstrap-theme.css"/> -->
+    <!-- <link rel="stylesheet" href="src//bootstrap/material.min.css"/> -->
+    <link rel="stylesheet" href="src/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="src/oPrompter.css"/>
+    <script src="src/jquery-3.6.0.js"></script>
+    <script src="src/bootstrap/bootstrap.js"></script>
+    <script src="src/oPrompter.js"></script>
+    <!-- <script src="src/bootstrap/bootstrap.bundle.js"></script> -->
+  </head>
+  <body>
+        <!-- Модальное окно -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header-bookmarks">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Рабочие</h4>
+              </div>
+              <div class="modal-body-bookmarks">
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие подсказки в модальном окне</h5>
+                <p><a href="#" class="tooltip-test" title="Tooltip">Эта ссылка</a> и <a href="#" class="tooltip-test" title="Tooltip">эта ссылка</a> имеют всплывающие подсказки при наведении курсора.</p>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+                <h5>Всплывающие окна в модальном окне</h5>
+                <p>Эта <a href="#" role="button" class="btn btn-secondary popover-test" title="Заголовок всплывающего окна" data-bs-content="В этом атрибуте задается содержимое тела всплывающего окна.">кнопка</a> вызывает всплывающее окно при нажатии.</p>
+                <hr>
+              </div>              
+            </div>
+          </div>
+        </div>
+    <div class="container">      
+      <div class="searcher_block input-group input-group-lg" id="example">
+        <input type="text" class="form-control" id="search-input" placeholder="Поисковый запрос" width="50%" ></input>
+        <button type="button" class="btn btn-sm btn-primary btn-search" id="searcher-yanex" title="Поисковик по умолчанию"><img src="src/ico/yandex_28px.png" height="20px"/></button>
+        <button type="button" class="btn btn-sm btn-primary btn-search" id="searcher-google" title="Правый клик, что бы задать по умолчанию"><img src="src/ico/google_28px.png" height="20px"/></button>
+        
+        <div class="dropdown-menu" id="context-menu">
+          <a class="dropdown-item" id="search-default" href="#">По умолчанию</a>
+          <a class="dropdown-item" id="search-reorder" href="#">Переопределить</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-info" data-toggle="modal" data-target="#myModal">
+            <div class="panel-heading-bookmarks">
+              <h3 class="panel-title">Рабочие</h3>
+            </div>
+            <div class="panel-body-bookmarks">
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-3">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-3">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-3">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+      </div>
+    </div>
+    <div class="container">
+      <div id="site-list">
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <p>© 2016 Company, Inc.</p>
+  </footer>
+</html>
