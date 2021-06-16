@@ -13,6 +13,7 @@
     <!-- <script src="src/bootstrap/bootstrap.bundle.js"></script> -->
   </head>
   <body>
+    <input type="file" id="selectBookmarks" onchange="LoadBookmarks(this)" style="display: true;"/>
         <!-- Модальное окно -->
         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -64,9 +65,9 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
+    <div class="container" id="opera-bookmark-container">
+      <!--<div class="row" id="opera-bookmark-row">
+         <div class="col-sm-3">
           <div class="panel panel-info" data-toggle="modal" data-target="#myModal">
             <div class="panel-heading-bookmarks">
               <h3 class="panel-title">Рабочие</h3>
@@ -74,39 +75,8 @@
             <div class="panel-body-bookmarks">
             </div>
           </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-3">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-3">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-3">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-      </div>
+        </div> 
+      </div>-->
     </div>
     <div class="container">
       <div id="site-list">
