@@ -5,46 +5,11 @@
   "chrome_url_overrides": {
       "newtab": "oPrompter.html"
   },
-  "permissions": [
-    "activeTab",
-    "alarms",
-    "bookmarks",
-    "browserSettings",
-    "browsingData",
-    "captivePortal",
-    "clipboardRead",
-    "clipboardWrite",
-    "contextMenus",
-    "contextualIdentities",
-    "cookies",
-    "dns",
-    "downloads",
-    "downloads.open",
-    "find",
-    "geolocation",
-    "history",
-    "identity",
-    "idle",
-    "management",
-    "menus",
-    "menus.overrideContext",
-    "nativeMessaging",
-    "notifications",
-    "pkcs11",
-    "privacy",
-    "proxy",
-    "search",
-    "sessions",
-    "storage",
-    "tabHide",
-    "tabs",
-    "theme",
-    "topSites",
-    "unlimitedStorage",
-    "webNavigation",
-    "webRequest",
-    "webRequestBlocking"
-  ],
+	"permissions": [
+		"tabs",
+		"storage",
+
+	],
   "browser_specific_settings": {
       "gecko": {
           "strict_min_version": "54.0a1"
